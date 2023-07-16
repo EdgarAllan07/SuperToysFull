@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style type="text/css">
+        #num1{
+            width: 70px;
+            margin-left: 18px;
+        }
+
+        #num2{
+            width: 70px;
+            margin-left: 18px;
+        }
+
+        #resultado{
+            width: 70px;
+            margin-left: 8px;
+        }
+
+        .calcular{
+            margin-left: 50px;
+        }
+
+        .form{
+            width: 180px;
+            background: #364e66;
+            padding: 10px;
+            border-radius: 4px;
+            font-family: 'calibri';
+            color: white;
+        }
+        
+        p{
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .field{
+            max-height: 30px;
+        }
+
+        #resultado{
+            width: 130px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+    <form action="" class="form">
+            <div>
+                <p>Calculadora</p>
+            </div>
+            <div>
+                <label for="num1">Valor A: </label><input type="number" name="num1" id="num1" placeholder="Valor a" tabindex="1" class="input input-2" required="1"><br><br>
+            </div>
+            <div>
+                <label for="num2">Valor B: </label><input type="number" name="num2" id="num2" placeholder="Valor B" tabindex="1" class="input input-2" required="1"><br><br>
+            </div>
+            <div>
+            <label for="operacion">Operacion: </label><select name="operacion" id="operacion" type="text" aria-placeholder="Operacion" tabindex="4" class="input input-2" required>
+                <option>Elegir</option>
+                <option id="suma">Sumar</option>
+                <option id="resta">Restar</option>
+                <option id="division">Dividir</option>
+                <option id="multiplicacion">Multiplicar</option>														
+                
+            </select>
+            <br><br>
+            </div>
+            <fieldset class="field">
+                <legend>Resultado</legend>
+                <input type="text" name="resultado" id="resultado" tabindex="1"><br><br> 
+            </fieldset>
+            <div>
+                <br>
+                <input type="submit" value="Calcular" class="calcular" id="calcular" tabindex="8">
+            </div>
+    </form>
+    
+    <script>
+        window.onload = function()
+            {
+                document.getElementById("calcular").onclick = function(event)
+                {
+                    event.preventDefault();
+
+                    operar();
+                };
+            };
+
+            ////////////////////////////////////////////////////////
+
+            function operar()
+            {
+                var operando1 = document.getElementById("num1");
+                var operando2 = document.getElementById("num2");
+                var operador  = document.getElementById("operacion");
+
+                
+                var resultado = NaN;
+
+                switch(operacion.value)
+                {
+                    case "Sumar":
+                        resultado = parseFloat(operando1.value) + 
+                                    parseFloat(operando2.value);
+                    break;
+
+                    case "Restar":
+                        resultado = parseFloat(operando1.value) - 
+                                    parseFloat(operando2.value);
+                    break;
+
+                    case "Multiplicar":
+                        resultado = parseFloat(operando1.value) * 
+                                    parseFloat(operando2.value);
+                    break;
+
+                    case "Dividir":
+                        resultado = parseFloat(operando1.value) / 
+                                    parseFloat(operando2.value);
+                    break;
+
+                    default:
+                        alert("El operador " + operador.value + " no se encuentra definido");
+                    break;
+                }
+
+                if(!isNaN(resultado))
+                    document.getElementById("resultado").value = resultado;
+            }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+body{
+	background-image: url("https://images.vexels.com/media/users/3/71402/raw/3614fe346bde700703def87192a3419f-fondo-de-grafico-financiero-fluorescente-de-blue-tech.jpg");
+	background-repeat: no-repeat;
+	background-color: transparent;
+	  background-size: cover;
+	  background-attachment: fixed;
+}
+
+.tabla{
+	background-color: #FF6F6F  ;
+	width: 1050px;
+	height: 500px;
+	opacity: 0.7;
+}

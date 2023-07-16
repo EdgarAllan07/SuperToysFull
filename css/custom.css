@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-position: center center no repeat;
+    min-height: 100%;
+    background-size: cover;
+    padding-top: 230px;
+    transition: padding-top 0.5s ease;
+}
+
+header{
+    width: 100%;
+    height: 250px;
+    background: #ffbb9c;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+header h1{
+    font-size: 42px;
+    color: black;
+    line-height: 230px;
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+
+header h1 i{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header nav{
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    line-height: 1;
+    width: 100%;
+    background: rgba(232, 63, 0, 0.8);
+    text-align: center;
+}
+
+header nav a{
+    color: white;
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+    
+}
+
+header nav a:hover{
+    background: rgba(230, 168, 76, 0.596);
+}
+
+.logo img{
+    width: 250px;
+    height: 175px;
+    margin-left: 30px;
+    padding: 0;
+    position: absolute;
+}
+
+p{
+    margin-bottom: 2rem;
+    line-height: 2;
+    color: #7f8c8d;
+    text-align: center;
+}
+
+body.sticky-header{
+    padding-top: 100px;
+}
+
+body.sticky-header header{
+    height: 60px;
+    background: #e88300;
+}
+
+body.sticky-header header h1{
+    transform: scale(0,0);
+}
+
+body{
+    background-color: #ffbb9c;
+}
+
+header{
+    padding: 20px 0 0 0;
+    text-align: center;
+}
+
+@media(min-width: 750px){
+    header {
+        text-align: left;
+    }
+}
+
+.lista-cafe #container{
+    position: relative;
+    display: block;
+    transition: padding-top 0.5s ease;
+}
+
+#lista-cafe .row{
+    margin-bottom: 20px;
+}
+
+.agregar-carrito{
+    margin: 10px 0;
+}
+
+.card{
+    text-align: center;
+    box-shadow: 0 25px 98px 0 rgb(0 0 0 /  3%); 
+    background: rgba(240, 141, 105, 0.8);
+}
+
+@media(min-width: 550px){
+    .card{
+        text-align: left;
+    }
+}
+
+.info-card{
+    padding: 10px 20px;
+    color: white;
+}
+
+.info-card p{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: white;
+    text-align: left;
+    
+}
+
+.info-card .precio{
+    text-decoration: line-through;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.info-card .precio span{
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.footer{
+    border-top: 1px solid white;
+    margin-top: 40px;
+    padding-top: 40px;
+}
+
+.footer .menu a{
+    display: block;
+    color: white;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.logo {
+    height: 150px;
+    width: 150px;
+    display: block;
+    margin: auto;   
+}
+
+footer{
+    width: 100%;
+    background: #404244;
+    color: white;
+    
+}
+
+.container-footer-all{
+    width: 100%;
+    max-width: 1234px;
+    margin: auto;
+    padding: 40px;
+}
+
+.container-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+h6{
+    font-size: 22px;
+}
+
+.empresa{
+    max-width: 300px;
+}
+
+.empresa img{
+    width: 230px;
+    height: 140px;
+    margin-top: 40px;
+}
+
+.servicios{
+    max-width: 300px;
+}
+
+.datos op{
+    margin-top: 20px;
+    color: #c7c7c7;
+}
+
+.datos a{
+    color: #c7c7c7;
+    line-height: 35px;
+    text-decoration: none;
+}
+
+ul.datos{
+    list-style-position: inside;
+}
+
+.atencion{
+    max-width: 300px;
+}
+
+.atencion p{
+    font-size: 14px;
+    color: rgb(172, 165, 165);
+    margin-top: 15px;
+    line-height: 1;
+}
+
+ul.atencion{
+    list-style-position: inside;
+}
+
+.atencion .horario{
+    font-size: 14px;
+    color: rgb(172, 165, 165);
+    margin-top: 20px;
+}
+
+ul.horario{
+    list-style-position: inside;
+    line-height: 2;
+}
+
+.redes{
+    max-width: 300px;
+}
+
+.redes p{
+    font-size: 14px;
+    color: rgb(172, 165, 165);
+    line-height: 1;
+}
+
+.row img{
+    width: 294.39px;
+    height: 260px;
+    
+}
+
+.container-footer{
+
+    width: 100%;
+    background: #101010;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.copyright{
+    color: #c7c7c7;
+}
+
+.copyright a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.informacion a{
+    text-decoration: none;
+    color: #c7c7c7;
+}
+
+table{
+    margin: auto;
+}
+
+.historia{
+    background-image: url(../images/R.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.servidor{
+    background-image: url(../images/R.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.internet{
+    background-image: url(../images/R.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+body .table{
+    padding: 0;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.internet h3{
+ text-align: center; 
+ font-family: "MarioNett";  
+ font-size: 40px;
+}
+
+.internet table p{
+    text-align: justify;
+    font-family: "Aero Matics";
+    font-size: 5px;
+}
+
+table .caso{
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 18px;
+    border: #2A2420 5px solid;
+}
+
+table .caso td{
+    border: #2A2420 5px solid;
+}
+
+table .video{
+    position: static;
+}
+
+.internet table img{
+    display:block;
+margin:auto;
+}
+
+hr {
+    height: 1px;
+    background-color: white;
+  }
+
+.info{
+    background-image: url(../images/R.jpg);
+}
+
+.plata{
+    background-image: url(../images/R.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}

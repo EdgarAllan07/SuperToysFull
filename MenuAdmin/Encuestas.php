@@ -1,0 +1,277 @@
+<?php
+    session_start();
+    require('../php/ValidaAdmin.php');
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Encuesta</title>	
+	<link rel = "stylesheet" type="text/css" href="../css/Encuestas.css">
+	<link rel="stylesheet" href="../css/estilos.css">
+	<script type="text/javascript">
+		document.addEventListener("DOMContentLoaded", function(){
+			document.getElementById("Formulario").addEventListener('submit',valida);
+		});
+
+		function valida(evento){
+			evento.preventDefault();
+			var Nombre = document.getElementById('Name').value;
+			let Edad = parseInt(document.getElementById('Edad').value);
+			
+			if (Nombre.length == 0) {
+				alert('Por Favor escriba su nombre');				
+				return;
+				}
+			if (Edad < 15){
+				alert('Por Favor Recuerda: Debes de ser mayor de 15 años para llenar esta encuesta' );				
+				return;
+			}					
+			this.submit();			
+		}
+	</script>	
+</head>
+<body>
+
+	<nav class="nave">
+		<a href="MenuAdmin.php">Inicio</a>                               
+        <a href="Avance.php">Avances</a>
+        <a href="Formularios.php">Formularios</a>
+        <a href="Listados.php">Mantenimientos</a>
+        <a href="Grupo.php">Informacion del Grupo</a>   
+        <a href="Perfil.php">Tu Cuenta</a>
+        <a href="Estadisticas.php" style="color: #123802;">Estadisticas</a>
+    </nav>
+	<br><br>
+	<form id="Formulario" action="../php/EnviarEncuestaAdmin.php" method="POST" class="form">
+	<table border="0" width="100%" height="100%">
+		<tr><td alight = "left">
+				<img src="../images/Encuesta/SP.jpg" width="150" height="100">
+			</td>
+			<td align="Center">
+				<h1>¡Ayudanos a ser mejores!</h1>
+			</td>
+			<td align="right">
+				<img src="../images/Encuesta/SP.jpg" width="150" height="100">
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3"><h4>Por Favor Recuerda:<br> 
+			Para llenar esta encuesta debes de ser mayor de 15 años.</h4></td>
+		</tr>
+	</table>
+	<div>
+		<fieldset>
+			<legend>Datos Generales</legend>
+			<table border='0' width="100%" height='100%'>
+				<tr>
+					<td>Por favor ingresa tu nombre:</td>
+					<td><input type="text" name="txtNombre" id="Name" placeholder="Ingrese su nombre aquí"></td>
+				</tr>
+				<tr>
+					<td>Por favor ingresa tu edad:</td>
+					<td><input type="number" name="txtEdad" id="Edad" placeholder="Ingrese su edad aquí" required=""></td>
+				</tr>
+			</table>
+		</fieldset>		
+	</div>
+	<br>
+	<div>
+		<fieldset>
+			<legend>Datos de Compras</legend>
+			<table border='0' width="100%" height='100%'>
+				<tr>
+					<td>Selecciona la fecha de tu ultima compra:</td>
+					<td><input type="date" name="Fecha" required></td>
+				</tr>
+				<tr>
+					<td>¿Recuerdas el monto? Por favor ingresalo</td>
+					<td><input type="number" step="any" name="txtMonto" required placeholder="Ingrese el monto"></input>
+					</td>
+				</tr>
+				<tr>
+					<td>¿Que te parecieron nuestros precios?</td>
+					<td><select name=slcPrecios>
+						<option value='Muy Bajos'>Muy Bajos</option>
+						<option value='Bajos'>Bajos</option>
+						<option value='Justos'>Justos</option>
+						<option value='Altos'>Altos</option>
+						<option value='Muy Altos'>Muy Altos</option>
+					</select>					
+					</td>
+				</tr>
+			</table>
+		</fieldset>		
+	</div>
+	<br>
+	<div>
+		<fieldset>
+			<legend>Nuestros Productos</legend>
+			<table border='0' width="100%" height='100%'>
+				<tr>
+					<td>Usualmente buscas juguetes para:</td>
+					<td><input type="radio" name="txtGenero" value='Niño'>Niños&nbsp;
+						<input type="radio" name="txtGenero" value='Niña'>Niñas&nbsp;
+						<input type="radio" name="txtGenero" value='Ambos' required>Ambos</td>
+				</tr>
+				<tr>
+					<td>¿Encontraste lo que buscabas?</td>
+					<td><input type="radio" name="txtStock" value='Si'>Si&nbsp;
+						<input type="radio" name="txtStock" value='No' required>No</td>
+				</tr>
+				<tr>
+					<td>¿Que te parece la calidad de nuestros productos?</td>
+					<td><select name=slcCalidad>
+						<option value='Muy Baja'>Muy Baja</option>
+						<option value='Baja'>Baja</option>
+						<option value='Regular'>Regular</option>
+						<option value='Alta'>Alta</option>
+						<option value='Muy Alta'>Muy Alta</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td>¿Disfrutan tus niños de nuestros juguetes?</td>
+					<td><select name=slcDisfrutan>
+						<option value='Mucho'>Mucho</option>
+						<option value='Poco'>Poco</option>
+						<option value='Nada'>Nada</option>						
+					</select></td>
+				</tr>
+				<tr>
+					<td>¿Cual es el color favorito de tus niños?</td>
+					<td><input type="color" name="txtColor"></td>
+				</tr>
+			</table>
+		</fieldset>		
+	</div>
+	<br>
+	<div>
+		<fieldset>
+			<legend>Nuesto Sitio Web</legend>
+			<table border='0' width="100%" height='100%'>
+				<tr>
+					<td>¡Calificanos! Que nota le das a nuestra página web:</td>
+					<td><input type="number" min="0" max="10" name="txtNota" required placeholder="Nota"></td>
+				</tr>
+				<tr>
+					<td>¿Te fue facil navegar por nuesto página web?</td>
+					<td><input type="radio" name="txtNavi" value="Si">Si&nbsp;
+						<input type="radio" name="txtNavi" value="No">No&nbsp;
+						<input type="radio" name="txtNavi" value="Un Poco" required>Un Poco</td>
+				</tr>
+				<tr>
+					<td>¿A tus niños les gusto nuestra página web?</td>
+					<td><input type="radio" name="txtPagina" value="Si">Si&nbsp;
+						<input type="radio" name="txtPagina" value="No">No&nbsp;
+						<input type="radio" name="txtPagina" value="Un Poco"required>Un Poco</td>
+				</tr>
+				<tr>
+					<td>¿Pudiste Realizar tu pago sin problemas?</td>
+					<td><input type="radio" name="txtPagos" value="Si">Si&nbsp;
+						<input type="radio" name="txtPagos" value="No">No&nbsp;
+						<input type="radio" name="txtPagos" value="No Compro" required>No compré</td>
+				</tr>
+				<tr>
+					<td>¿Experimentaste algun problema técnico con nuestra página web?</td>
+					<td><textarea name="txtFallas"></textarea></td>
+				</tr>
+				<tr>
+					<td>¿Tienes algun otro comentario o sugerencia?</td>
+					<td><textarea name="txtOtros"></textarea></td>
+				</tr>
+			</table>
+		</fieldset>		
+	</div>
+	<br>
+	<br>
+	<input type="submit" name="btnEnviar" value="Enviar">	
+	</form>
+	<br>
+	<footer>
+        <div class="container-footer-all">
+            <div class="container-body">
+                <!--Logo Empresa-->
+                <div class="empresa">
+                    <a href="MenuAdmin.html">
+                    <img src="../images/SLogo.png">
+                    </a>
+                </div>
+                <!--Servicios-->
+                <div class="servicios">
+                <h6> Servicios </h6>
+                <ul class="datos">
+                    <li class="op">
+                      <a href="#">Mi cuenta</a>
+                    </li>
+                    <li class="op">
+                      <a href="#">Tus Ordenes</a>
+                    </li>
+                    <li class="op">
+                      <a href="#">Contáctenos</a>
+                    </li>
+                    <li class="op">
+                      <a href="#">Información de envíos</a>
+                    </li>
+                    <li class="op">
+                      <a href="#">Términos de Uso</a>
+                    </li>
+                </ul>
+                </div>   
+                <!--Información-->
+                <div class="atencion">
+                    <h6> Dirección </h6>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste optio natus fugit quos, ad voluptate minus maiores est, sint laboriosam eveniet dolorum deleniti sapiente. Mollitia aperiam sunt recusandae porro voluptatum.
+                    </p>
+                </ul class="dire">
+                <h6> Horarios de Atención </h6>
+                <ul class="horario">
+                    <li>
+                        Lunes a Viernes: 8:00 am - 7:00 pm
+                    </li>
+                    <li>
+                        Sábado: 9:00 am - 6:00 pm    
+                    </li>
+                    <li>
+                        Domingo: 9:00 am - 4:00 pm  
+                    </li>
+                </ul>    
+                </div>
+                <!--Redes Sociales-->
+                
+                <div class="redes">
+                    <h6>Contactanos</h6>
+                <a target="_blank" class="net" href="#">
+                    <img src="../images/facebook.png" width="36px">
+                </a>
+                <a target="_blank" class="net" href="#">
+                    <img src="../images/instagram.png" width="36px">
+                </a>
+                <p>
+                    WhastApp Tel: 8888-8888
+                </p>
+                <p>
+                    Sucursal Tel: 5478-8888
+                </p>
+                </div>
+            </div>
+        </div>
+        <!--Derechos Reservados-->
+        <div class="container-footer">
+            <div class="copyright">
+                © 2021 Todos los Derechos Reservados | <a href="#">SuperStoys</a>
+            </div>
+            <div>
+                <div class="informacion">
+                    <a href="#">Información Compañia</a> |
+                    <a href="#">Privación y Politica</a> |
+                    <a href="#">Terminos y Condiciones</a> 
+                </div>
+            </div>
+        </div>
+        </footer>
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="js/script.js"></script>
+</body>
+</html>

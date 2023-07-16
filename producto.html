@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario de registro</title>
+        <link rel="stylesheet" href="./css/formulario.css">
+        <link rel="stylesheet" href="./css/EstiloH.css">
+    </head>
+    <body>
+
+        
+            
+    
+            
+            <nav class="nave">
+                <a href="index.html">Inicio</a>
+                <a href="Historia.html">Historia</a>
+                <a href="Categorias.html">Categorias</a>
+                <a href="Avance.html">Avance 1</a>
+                <a href="producto.html">Registrar Productos</a>
+                <a href="Login.html">Login</a>
+                <a href="cliente.html">Registrar Clientes</a>
+                <a href="contacto.html">Contactenos</a>
+                <a href="Encuesta.html">Encuesta</a>
+                <a href="Grupo.html">Informacion del Grupo</a>
+            </nav>
+
+            
+        
+        <br><br><br><br>
+
+        <h1>Formulario de registro</h1>
+        <form   class="form-register">
+            <h2 class="form-titulo">Registro de Productos</h2>
+            <div class="contenedor-inputs">
+        <div class="container">
+                <label for="nombre">Código: </label><input type="text" name="nombre" id="nombre" placeholder="Código" tabindex="1" class="input input-2" required>
+                <label for="apellidos">Nombre: </label><input type="text" name="apellidos" id="apellidos" placeholder="Nombre" tabindex="2" class="input input-2" required>
+        </div>
+        <div class="container">
+                <label for="nombre">Precio: </label><input type="number" name="nombre" id="nombre" placeholder="Precio" tabindex="1" class="input input-2" required min="0.01">
+                <label for="apellidos">Cantidad: </label><input type="number" name="apellidos" id="apellidos" placeholder="Cantidad" tabindex="2" class="input input-2" required min="1">
+        </div>
+        <div class="container">
+            <label for="nombre">Fecha: </label><input type="date" name="nombre" id="nombre" placeholder="Código" tabindex="1" class="input input-2" required>
+            <label for="apellidos">Proveedor: </label><input type="text" name="apellidos" id="apellidos" placeholder="Proveedor" tabindex="2" class="input input-2" required>
+        </div>
+        <div class="container">
+                <label for="dni">Marca: </label><input type="text" name="dni" id="dni" placeholder="Marca" tabindex="4" class="input input-2" required>
+                <label for="telefono">Categoria: </label>
+                <select name="categoria" id="categoria" type="text" aria-placeholder="categoria" tabindex="4" class="input input-2" required>
+					<option>Disfraces</option>
+                    <option>Bloques de Arma</option>
+					<option>Manualidades</option>
+					<option>Montables</option>
+					<option>Muñecas</option>
+					<option>Peluches</option>															
+				</select>
+                </div>
+        <div class="container">
+                <label for="dni">Detalles: </label><input type="text" name="dni" id="dni" placeholder="Detalles del Producto" tabindex="4" class="detalle" required size="50" rows="4" cols="40">
+                </div>
+                <br><br><br>
+                <input type="submit" value="Registrar" class="enviar" tabindex="8"/>
+                
+            </div>
+        </form>
+
+        <br><br><br><br><br>
+
+        <footer>
+            <div class="container-footer-all">
+                <div class="container-body">
+                    <!--Logo Empresa-->
+                    <div class="empresa">
+                        <a href="index.html">
+                        <img src="./images/SLogo.png">
+                        </a>
+                    </div>
+                    <!--Servicios-->
+                    <div class="servicios">
+                    <h6> Servicios </h6>
+                    <ul class="datos">
+                        <li class="op">
+                          <a href="#">Mi cuenta</a>
+                        </li>
+                        <li class="op">
+                          <a href="#">Tus Ordenes</a>
+                        </li>
+                        <li class="op">
+                          <a href="#">Contáctenos</a>
+                        </li>
+                        <li class="op">
+                          <a href="#">Información de envíos</a>
+                        </li>
+                        <li class="op">
+                          <a href="#">Términos de Uso</a>
+                        </li>
+                    </ul>
+                    </div>   
+                    <!--Información-->
+                    <div class="atencion">
+                        <h6> Dirección </h6>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste optio natus fugit quos, ad voluptate minus maiores est, sint laboriosam eveniet dolorum deleniti sapiente. Mollitia aperiam sunt recusandae porro voluptatum.
+                        </p>
+                    </ul class="dire">
+                    <h6> Horarios de Atención </h6>
+                    <ul class="horario">
+                        <li>
+                            Lunes a Viernes: 8:00 am - 7:00 pm
+                        </li>
+                        <li>
+                            Sábado: 9:00 am - 6:00 pm    
+                        </li>
+                        <li>
+                            Domingo: 9:00 am - 4:00 pm  
+                        </li>
+                    </ul>    
+                    </div>
+                    <!--Redes Sociales-->
+                    
+                    <div class="redes">
+                        <h6>Contactanos</h6>
+                    <a target="_blank" class="net" href="#">
+                        <img src="./images/facebook.png" width="36px">
+                    </a>
+                    <a target="_blank" class="net" href="#">
+                        <img src="./images/instagram.png" width="36px">
+                    </a>
+                    <p>
+                        WhastApp Tel: 8888-8888
+                    </p>
+                    <p>
+                        Sucursal Tel: 5478-8888
+                    </p>
+                    </div>
+                </div>
+            </div>
+            <!--Derechos Reservados-->
+            <div class="container-footer">
+                <div class="copyright">
+                    © 2021 Todos los Derechos Reservados | <a href="#">SuperStoys</a>
+                </div>
+                <div>
+                    <div class="informacion">
+                        <a href="#">Información Compañia</a> |
+                        <a href="#">Privación y Politica</a> |
+                        <a href="#">Terminos y Condiciones</a> 
+                    </div>
+                </div>
+            </div>
+            </footer>
+            <script src="./js/jquery-3.6.0.min.js"></script>
+            <script src="js/script.js"></script>
+    </body>
+</html>

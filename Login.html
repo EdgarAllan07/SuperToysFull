@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+	<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Iniciar Sesion</title>
+	<link rel="stylesheet" type="text/css" href="./css/login.css">
+	<link rel="stylesheet" href="./css/EstiloH.css">
+	
+	
+	
+</head>
+
+<body>
+
+	<nav class="nave">
+		<a href="index.html">Inicio</a>
+        <a href="Historia.html">Historia</a>               
+        <a href="contacto.html">Contactenos</a>
+        <a href="Encuestas.html">Encuesta</a>
+        <a href="Grupo.html">Informacion del Grupo</a>
+        <a href="cliente.html">Registrarse</a>
+        <a href="Login.html">Login</a> 
+	</nav>
+	
+	
+
+
+	 <form action="./php/Login.php" method="POST" id="miForm" onsubmit="verificarPasswords(); return false" >
+	<table align="center"  class="tabla" border="0" cellpadding="0" cellspacing="0">
+
+		<tr height="20%" bgcolor="#2CA0FA " class="fondo">
+			<td align="center"><font size="14"><p><font color="#fff" size="15" face="Abril Fatface">Iniciar Sesion</p></font></td>
+		</tr>
+		<tr>
+				<td align="center">
+					<br>
+					<input class="correo" type="correo" name="User" placeholder="Correo electronico" id="correo"  maxlength="50"  required>
+			</td>
+		</tr>
+		<tr heigh= "20%">
+			<td align="center">
+				<br>
+				<input class="contra" type="password" name="Contraseña" placeholder="Contraseña" id="pass"  maxlength="14" required>
+			
+			</td>
+
+		</tr>
+		
+		
+		<tr height="40%">
+			
+			<td align="center"><input type="submit" name="Log" value="Log In" class="log" onclick="ValidarCorreo(form.correo.value)" onsubmit="verificarPasswords(form.pass1.pass2.value)">
+				<br>
+				<br><input type="CheckBox" name="validar" >Recordar contraseña
+				<br><p><a href="recuperarcontra.html"><font color="#000000 ">¿Has olvidado su correo o contraseña?</font></a></p>
+			</td>
+
+	</table>
+	</form>
+
+
+	<br><br>	
+
+	<center><td align="center"><a href="index.html"><input type="submit" name="Log" value="Regresar" class="regresar"></a></center>
+		<br><br>
+
+		<footer>
+            <div class="container-footer-all">
+                <div class="container-body">
+                    <!--Logo Empresa-->
+                    <div class="empresa">
+                        <a href="./index.html">
+                        <img src="./images/SLogo.png">
+                        </a>
+                    </div>
+                    <!--Servicios-->
+                    <div class="servicios">
+                    <h6> Servicios </h6>
+                    <ul class="datos">
+                        <li class="op">
+                          <a href="#">Mi cuenta</a>
+                        </li>
+                        <li class="op">
+                          <a href="#">Tus Ordenes</a>
+                        </li>
+                        <li class="op">
+                          <a href="#">Contáctenos</a>
+                        </li>
+                        <li class="op">
+                          <a href="#">Información de envíos</a>
+                        </li>
+                        <li class="op">
+                          <a href="#">Términos de Uso</a>
+                        </li>
+                    </ul>
+                    </div>   
+                    <!--Información-->
+                    <div class="atencion">
+                        <h6> Dirección </h6>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste optio natus fugit quos, ad voluptate minus maiores est, sint laboriosam eveniet dolorum deleniti sapiente. Mollitia aperiam sunt recusandae porro voluptatum.
+                        </p>
+                    </ul class="dire">
+                    <h6> Horarios de Atención </h6>
+                    <ul class="horario">
+                        <li>
+                            Lunes a Viernes: 8:00 am - 7:00 pm
+                        </li>
+                        <li>
+                            Sábado: 9:00 am - 6:00 pm    
+                        </li>
+                        <li>
+                            Domingo: 9:00 am - 4:00 pm  
+                        </li>
+                    </ul>    
+                    </div>
+                    <!--Redes Sociales-->
+                    
+                    <div class="redes">
+                        <h6>Contactanos</h6>
+                    <a target="_blank" class="net" href="#">
+                        <img src="./images/facebook.png" width="36px">
+                    </a>
+                    <a target="_blank" class="net" href="#">
+                        <img src="./images/instagram.png" width="36px">
+                    </a>
+                    <p>
+                        WhastApp Tel: 8888-8888
+                    </p>
+                    <p>
+                        Sucursal Tel: 5478-8888
+                    </p>
+                    </div>
+                </div>
+            </div>
+            <!--Derechos Reservados-->
+            <div class="container-footer">
+                <div class="copyright">
+                    © 2021 Todos los Derechos Reservados | <a href="#">SuperStoys</a>
+                </div>
+                <div>
+                    <div class="informacion">
+                        <a href="#">Información Compañia</a> |
+                        <a href="#">Privación y Politica</a> |
+                        <a href="#">Terminos y Condiciones</a> 
+                    </div>
+                </div>
+            </div>
+            </footer>
+
+
+		<script>
+			function ValidarCorreo(correo)
+			{
+				var expReg =  /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+				var esValido = expReg.test(correo);
+	
+				if(esValido == true)
+				{
+					//alert ("El correo es valido");
+				}
+				else
+					//alert ("El correo no es valido");
+			
+			
+				function verificarPasswords() 
+				{
+ 
+					// Ontenemos los valores de los campos de contraseñas 
+					pass1 = document.getElementById('pass');
+					pass2 = document.getElementById('pass2');
+
+					// Verificamos si las constraseñas no coinciden 
+					if (pass1.value != pass2.value) {
+						alert("La contraseña no coinciden");
+						// Si las constraseñas no coinciden mostramos un mensaje 
+						document.getElementById("error").classList.add("mostrar");
+
+
+						return false;
+				} else {
+
+					// Si las contraseñas coinciden ocultamos el mensaje de error
+					document.getElementById("error").classList.remove("mostrar");
+
+					// Mostramos un mensaje mencionando que las Contraseñas coinciden 
+					document.getElementById("ok").classList.remove("ocultar");
+
+					// Desabilitamos el botón de login 
+					document.getElementById("login").disabled = true;
+
+					// Refrescamos la página (Simulación de envío del formulario) 
+					setTimeout(function() {
+						location.reload();
+					}, 3000);
+
+					return true;
+				}
+				}
+			}
+		</script>
+	
+
+</body>
+</html>

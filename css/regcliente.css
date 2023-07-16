@@ -1,0 +1,234 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-image: url('../images/background.jpg');
+	background-repeat: no-repeat,repeat;
+	background-size: cover;
+
+}
+.form-register{
+	width: 400px;
+	background: #24303c;
+	padding: 30px;
+	margin: auto;
+	margin-top: 100px;
+	border-radius: 4px;
+	font-family: 'calibri';
+	color: white;
+
+}
+h4{
+	text-align: center;
+	font-size: 22;
+	margin-bottom: 28px;
+}
+.controls{
+	width: 100%;
+	background: #24303c;
+	padding: 10px;
+	border-radius: 4px;
+	margin-bottom: 16px;
+	border: 1px solid #1f53c5;
+	font-family: 'calibri';
+	font-size: 18px;
+	color: white;
+}
+.form-register p{
+	height: 40px;
+	text-align: center;
+	font-size: 18px;
+}
+
+.form-register a{
+	color: white;
+	text-decoration: none;
+}
+
+.form-register a:hover{
+	color: white;
+	text-decoration: underline;
+}
+.form-register .botons{
+	width: 100%;
+	background: #1f53c5;
+	border:none;
+	padding: 12px;
+	color: white;
+	margin: 16px 0;
+	font-size: 16px;
+}
+
+.boton{
+	width: 100%;
+	background: #1f53c5;
+	border:none;
+	padding: 12px;
+	color: white;
+	margin: 16px 0;
+	font-size: 16px;
+}
+
+.regresar{
+	width: 400px;
+	
+	height: 40px;
+border-color: #2CA0FA;
+  color: #000000 ;
+  background-image: -webkit-linear-gradient(45deg, #2CA0FA 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #2CA0FA 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+ 	background-color: #FFFFFF ;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+
+.regresar:hover{
+	background-position: 0;
+}
+
+.nave{
+    
+    bottom: 0;
+    height: 60px;
+    line-height: 1;
+    width: 100%;
+    background: rgba(232, 63, 0, 0.8);
+    text-align: center;
+}
+
+.nave a{
+    color: white;
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.nave a:hover{
+    background: rgb(243, 166, 121);
+}
+
+
+footer{
+    width: 100%;
+    background: #404244;
+    color: white;
+    
+}
+
+.container-footer-all{
+    width: 100%;
+    max-width: 1234px;
+    margin: auto;
+    padding: 40px;
+}
+
+.container-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+h6{
+    font-size: 22px;
+}
+
+.empresa{
+    max-width: 300px;
+}
+
+.empresa img{
+    width: 230px;
+    height: 140px;
+    margin-top: 40px;
+}
+
+.servicios{
+    max-width: 300px;
+}
+
+.datos op{
+    margin-top: 20px;
+    color: #c7c7c7;
+}
+
+.datos a{
+    color: #c7c7c7;
+    line-height: 35px;
+    text-decoration: none;
+}
+
+ul.datos{
+    list-style-position: inside;
+}
+
+.atencion{
+    max-width: 300px;
+}
+
+.atencion p{
+    font-size: 14px;
+    color: rgb(172, 165, 165);
+    margin-top: 15px;
+    line-height: 1;
+}
+
+ul.atencion{
+    list-style-position: inside;
+}
+
+.atencion .horario{
+    font-size: 14px;
+    color: rgb(172, 165, 165);
+    margin-top: 20px;
+}
+
+ul.horario{
+    list-style-position: inside;
+    line-height: 2;
+}
+
+.redes{
+    max-width: 300px;
+}
+
+.redes p{
+    font-size: 14px;
+    color: rgb(172, 165, 165);
+    line-height: 1;
+}
+
+.row img{
+    width: 294.39px;
+    height: 260px;
+    
+}
+
+.container-footer{
+
+    width: 100%;
+    background: #101010;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.copyright{
+    color: #c7c7c7;
+}
+
+.copyright a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.informacion a{
+    text-decoration: none;
+    color: #c7c7c7;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario de contacto</title>
+
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    
+    
+</head>
+<body>
+
+    <nav class="nave">
+        <a href="index.html">Inicio</a>
+                <a href="Historia.html">Historia</a>
+                <a href="Categorias.html">Categorias</a>
+                <a href="Avance.html">Avance 1</a>
+                <a href="producto.html">Registrar Productos</a>
+                <a href="Login.html">Login</a>
+                <a href="cliente.html">Registrar Clientes</a>
+                <a href="contacto.html">Contactenos</a>
+                <a href="Encuesta.html">Encuesta</a>
+                <a href="Grupo.html">Informacion del Grupo</a>
+    </nav>
+
+    <section class="form_wrap">
+
+        <section class="cantact_info">
+            <section class="info_title">
+                <span class="fa fa-user-circle"></span>
+                <h2>INFORMACION<br>DE CONTACTO</h2>
+            </section>
+            <section class="info_items">
+                <p><span class="fa fa-envelope"></span> info.contact@supertoys.com</p>
+                <p><span class="fa fa-mobile"></span> +503 7080-1598</p>
+            </section>
+        </section>
+
+        <form action="contactanos.php" method="POST" a class="form_contact">
+            <h2>C O N T A C T A N O S</h2>
+            <div class="user_info">
+                <label for="names">Nombres *</label>
+                <input type="text" name="nombres" id="names" required="">
+
+                <label for="phone">Telefono / Celular</label>
+                <input type="text" name="telefono" id="phone">
+
+                <label for="email">Correo electronico *</label>
+                <input type="email" name="correo" id="email" required="">
+
+                <label for="mensaje">Mensaje *</label>
+                <textarea id="mensaje" name="mensaje" required=""></textarea>
+
+                <input type="submit" name="enviar" value="Enviar Mensaje" id="btnSend">
+                <a href="./listacontactos.php">Mantenimiento</a>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <div class="container-footer-all">
+            <div class="container-body">
+                <!--Logo Empresa-->
+                <div class="empresa">
+                    <a href="index.html">
+                    <img src="./images/SLogo.png">
+                    </a>
+                </div>
+                <!--Servicios-->
+                <div class="servicios">
+                <h6> Servicios </h6>
+                <ul class="datos">
+                    <li class="op">
+                      <a href="#">Mi cuenta</a>
+                    </li>
+                    <li class="op">
+                      <a href="#">Tus Ordenes</a>
+                    </li>
+                    <li class="op">
+                      <a href="#">Contáctenos</a>
+                    </li>
+                    <li class="op">
+                      <a href="#">Información de envíos</a>
+                    </li>
+                    <li class="op">
+                      <a href="#">Términos de Uso</a>
+                    </li>
+                </ul>
+                </div>   
+                <!--Información-->
+                <div class="atencion">
+                    <h6> Dirección </h6>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste optio natus fugit quos, ad voluptate minus maiores est, sint laboriosam eveniet dolorum deleniti sapiente. Mollitia aperiam sunt recusandae porro voluptatum.
+                    </p>
+                </ul class="dire">
+                <h6> Horarios de Atención </h6>
+                <ul class="horario">
+                    <li>
+                        Lunes a Viernes: 8:00 am - 7:00 pm
+                    </li>
+                    <li>
+                        Sábado: 9:00 am - 6:00 pm    
+                    </li>
+                    <li>
+                        Domingo: 9:00 am - 4:00 pm  
+                    </li>
+                </ul>    
+                </div>
+                <!--Redes Sociales-->
+                
+                <div class="redes">
+                    <h6>Contactanos</h6>
+                <a target="_blank" class="net" href="#">
+                    <img src="./images/facebook.png" width="36px">
+                </a>
+                <a target="_blank" class="net" href="#">
+                    <img src="./images/instagram.png" width="36px">
+                </a>
+                <p>
+                    WhastApp Tel: 8888-8888
+                </p>
+                <p>
+                    Sucursal Tel: 5478-8888
+                </p>
+                </div>
+            </div>
+        </div>
+        <!--Derechos Reservados-->
+        <div class="container-footer">
+            <div class="copyright">
+                © 2021 Todos los Derechos Reservados | <a href="#">SuperStoys</a>
+            </div>
+            <div>
+                <div class="informacion">
+                    <a href="#">Información Compañia</a> |
+                    <a href="#">Privación y Politica</a> |
+                    <a href="#">Terminos y Condiciones</a> 
+                </div>
+            </div>
+        </div>
+        </footer>
+        <script src="./js/jquery-3.6.0.min.js"></script>
+        <script src="js/script.js"></script>
+        
+        
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+Cambiar archivos de coneccion en las siguientes carpetas del proyecto:
+
+CARPETA php
+-conexion.php 
+-Base.php
+
+CARPETA MenuAdmin / Contactanos:
+-conexion.php
+
+CARPETA MenuAdmin / Productos:
+-Conexion.php
+
+Scipt de la base de datos esta en carpeta:
+BackUpDataBase
+

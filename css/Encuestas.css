@@ -1,0 +1,29 @@
+.form{
+	background-color: #555553;
+	border-radius: 6px;
+	color: #E4F572;
+	padding: 10px;
+	margin: 0 auto;
+	width: 650px;
+}
+body
+{
+	background-color: #ffbb9c;
+}
+h1
+{
+	color: #F7FA00;
+	text-align: center;
+	font-size: 26pt;
+}
+h4
+{
+	color: white;
+	font-weight: normal; 
+
+}
+legend
+{
+	color: #32F006;	
+	font-size: 14pt;
+}

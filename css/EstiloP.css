@@ -1,0 +1,478 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-position: center center no repeat;
+    min-height: 100%;
+    background-size: cover;
+    padding-top: 330px;
+    transition: padding-top 0.5s ease;
+}
+
+header{
+    width: 100%;
+    height: 250px;
+    background: #ffbb9c;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+header h1{
+    font-size: 42px;
+    color: black;
+    line-height: 230px;
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+
+header h1 i{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header nav{
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    line-height: 1;
+    width: 100%;
+    background: rgba(232, 63, 0, 0.8);
+}
+
+header nav a{
+    color: white;
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+header nav a:hover{
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.logo img{
+    
+    width: 250px;
+    height: 175px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+h2{
+    font-size: 34px;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 2;
+    color: #2c3e50;
+}
+
+p{
+    margin-bottom: 2rem;
+    line-height: 2;
+    color: #7f8c8d;
+}
+
+.wrapper{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section{
+    margin: 10px;
+    padding: 20px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+body.sticky-header{
+    padding-top: 100px;
+}
+
+body.sticky-header header{
+    height: 60px;
+    background: #e88300;
+}
+
+body.sticky-header header h1{
+    transform: scale(0,0);
+}
+
+.carrito img{
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    padding: 0;
+    float: right;    
+}
+
+.carrito span{
+    font-size: 15px;
+    text-align: right;
+    line-height: 26px;
+    margin-left: 5px;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates);
+
+* {
+    margin:0;
+    padding:0;
+    font:12pt Arial;
+}
+
+.field{
+    position: relative;
+    padding: 0;
+    padding-top: 80px;
+    padding-right: 425px;
+    padding-left: 225px;
+    margin-right: 150px;
+    margin-left: 150px;
+    display:flex;
+    flex-direction:row;
+    box-shadow:
+    1px 1px 0 rgba(232, 63, 0, 0.8),
+    2px 2px 0 rgba(232, 63, 0, 0.8),
+    3px 3px 0 rgba(232, 63, 0, 0.8),
+    4px 4px 0 rgba(232, 63, 0, 0.8),
+    5px 5px 0 rgba(232, 63, 0, 0.8),
+    6px 6px 0 rgba(232, 63, 0, 0.8),  
+}
+
+.field>input[type=text],
+.field>button {
+  display:block;
+  font:1.2em 'Montserrat Alternates';
+}
+
+.field>input[type=text] {
+  flex:1;
+  padding:0.6em;
+  border:0.2em solid rgba(232, 63, 0, 0.8);
+}
+
+.field>button {
+  padding:0.6em 0.8em;
+  background-color:rgba(232, 63, 0, 0.8);
+  color:white;
+  border:none;
+}
+
+footer{
+    width: 100%;
+    background: #404244;
+    color: white;
+    
+}
+
+.container-footer-all{
+    width: 100%;
+    max-width: 1234px;
+    margin: auto;
+    padding: 40px;
+}
+
+.container-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+h6{
+    font-size: 22px;
+}
+
+.empresa{
+    max-width: 300px;
+}
+
+.empresa img{
+    width: 230px;
+    height: 140px;
+    margin-top: 40px;
+}
+
+.servicios{
+    max-width: 300px;
+}
+
+.datos op{
+    margin-top: 20px;
+    color: #c7c7c7;
+}
+
+.datos a{
+    color: #c7c7c7;
+    line-height: 35px;
+    text-decoration: none;
+}
+
+ul.datos{
+    list-style-position: inside;
+}
+
+.atencion{
+    max-width: 300px;
+}
+
+.atencion p{
+    font-size: 14px;
+    color: rgb(172, 165, 165);
+    margin-top: 15px;
+    line-height: 1;
+}
+
+ul.atencion{
+    list-style-position: inside;
+}
+
+.atencion .horario{
+    font-size: 14px;
+    color: rgb(172, 165, 165);
+    margin-top: 20px;
+}
+
+ul.horario{
+    list-style-position: inside;
+    line-height: 2;
+}
+
+.redes{
+    max-width: 300px;
+}
+
+.redes p{
+    font-size: 14px;
+    color: rgb(172, 165, 165);
+    line-height: 1;
+}
+
+.row img{
+    width: 294px;
+    height: 240px;
+}
+
+.container-footer{
+
+    width: 100%;
+    background: #101010;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.copyright{
+    color: #c7c7c7;
+}
+
+.copyright a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.informacion a{
+    text-decoration: none;
+    color: #c7c7c7;
+}
+
+@media screen and (max-width: 1100px) {
+        .container-body{
+            flex-wrap: wrap;
+        }
+        .empresa{
+            max-width: 100%;
+        }
+        .servicios,
+        .redes,
+        .atencion{
+            margin-top: 40px;
+        }
+}
+
+.navct{
+    color: white;
+    padding-top: 5px;
+    text-transform: uppercase;
+}
+
+@media(min-width: 750px){
+    header {
+        text-align: left;
+    }
+}
+
+ul{
+    list-style: none;
+}
+
+#hero{
+    background: #ffbb9c;;
+    position: relative;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+#hero h2,
+#hero p{
+    text-align: center;
+}
+
+#encabezado{
+    margin: 30px 0;
+}
+
+.submenu{
+    position: relative;
+}
+
+.submenu #carrito{
+    display: none;
+}
+
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right: 0;
+    color: white;
+    top: 100%;
+    z-index: 1;
+    background-color: #2A2420;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
+
+.vacio {
+    padding: 10px;
+    background-color: crimson;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+
+.contenido-hero{
+    padding-top: 120px;
+    margin-top: 80px;
+    color: white;
+}
+
+.contenido-hero form{
+    position: relative;
+    margin-bottom: 0;
+}
+
+.contenido-hero form #buscador{
+    height: 50px;
+    margin-bottom: 0;
+}
+
+.contenido-hero form .submit-buscador{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 0;
+    display: block;
+    text-indent: -9999px;
+    width: 50px;
+    background-image: url(../images/lupa.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.barra{
+    padding: 20px 0;
+    background: #ffbb9c;
+}
+
+.barra p{
+    margin: 0;
+    color: white;
+}
+
+.icono {
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 60px;
+    background-size: 30px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+@media(min-width: 750px){
+    .icono{
+        margin-bottom: 0;
+    }
+}
+
+ /* .icono{
+     background-image: url(../images/icono.png)
+ } */
+
+#lista-cafe .row{
+    margin-bottom: 20px;
+}
+
+.agregar-carrito{
+    margin: 10px 0;
+}
+
+.card{
+    text-align: center;
+    box-shadow: 0 25px 98px 0 rgb(0 0 0 /  3%); 
+    background: #362D27;
+}
+
+@media(min-width: 550px){
+    .card{
+        text-align: left;
+    }
+}
+
+.info-card{
+    padding: 10px 20px;
+    color: white;
+}
+
+.info-card p,
+.card h4{
+    margin-bottom: 5px;
+}
+
+.info-card .precio{
+    text-decoration: line-through;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.info-card .precio span{
+    font-weight: 700;
+    font-size: 22px;
+}
+
